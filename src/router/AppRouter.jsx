@@ -20,8 +20,7 @@ import { ProjectDetails } from '../pages/ProjectDetails'
 import { IdentityVerification } from '../pages/IdentityVerification'
 
 export function AppRouter() {
-  console.log('app router')
-
+  
   return (
     <Routes>
       {/* Rutas públicas protegidas por PublicRoute */}

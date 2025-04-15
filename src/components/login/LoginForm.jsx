@@ -33,11 +33,11 @@ export function LoginForm() {
       <form className="login-form" onSubmit={handleSubmit}>
         <label>
           Correo electrónico
-          <input name="email" type="email" placeholder="felipocampo@shareflow.com" required />
+          <input name="email" type="email" placeholder="felipocampo@shareflow.com" required defaultValue='felipe@pixel.com'/>
         </label>
         <label>
           Contraseña *
-          <input name="password" type="password" required />
+          <input name="password" type="password" required defaultValue='123456'/>
         </label>
 
         {error && <p className="login-error">{error}</p>}

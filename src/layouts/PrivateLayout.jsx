@@ -1,11 +1,14 @@
 import { Outlet } from 'react-router-dom'
 import '@/styles/PrivateLayout.css'
+import { useAuth } from '@/context/AuthContext'
 
 //Assests
 import logo from '@/assets/shareflow-pixel-logo.png'
 import { SidebarMenu } from '../components/privateLayout/SidebarMenu'
 
 export function PrivateLayout() {
+    const { logout } = useAuth()
+  
   return (
     <section className="private-layout">
       <aside className="sidebar">
@@ -15,9 +18,12 @@ export function PrivateLayout() {
 
         <SidebarMenu />
 
-        <div className="logout">
-          <a href="#">Cerrar Sesión</a>
-        </div>
+        <button
+          onClick={logout}
+
+         className="logout">
+          Cerrar Sesión
+        </button>
       </aside>
 
       <article className="main-content">
