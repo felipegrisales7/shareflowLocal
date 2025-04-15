@@ -14,6 +14,10 @@ import { Register } from '@/pages/Register'
 // Private pages
 import { Home } from '@/pages/Home'
 import { Dashboard } from '@/pages/dashboard'
+import { Marketplace } from '@/pages/Marketplace'
+import { ScreenDetails } from '../pages/ScreenDetails'
+import { ProjectDetails } from '../pages/ProjectDetails'
+import { IdentityVerification } from '../pages/IdentityVerification'
 
 export function AppRouter() {
   console.log('app router')
@@ -48,7 +52,11 @@ export function AppRouter() {
       >
         <Route path="/home" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-      </Route>
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/screen-details/:id" element={<ScreenDetails />} />
+        <Route path="/project-details/:id" element={<ProjectDetails />} />
+        <Route path="/identity-verification" element={<IdentityVerification />} />
+    </Route>
 
       {/* Default: redirige a /home */}
       <Route path="/" element={<Navigate to="/home" />} />

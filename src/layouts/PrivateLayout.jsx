@@ -1,43 +1,31 @@
 import { Outlet } from 'react-router-dom'
 import '@/styles/PrivateLayout.css'
 
+//Assests
+import logo from '@/assets/shareflow-pixel-logo.png'
+import { SidebarMenu } from '../components/privateLayout/SidebarMenu'
+
 export function PrivateLayout() {
   return (
-    <div className="private-layout">
+    <section className="private-layout">
       <aside className="sidebar">
         <div className="logo">
-          <img src="/logo.png" alt="Shareflow Logo" />
-          <span className="logo-tag">Pixel</span>
+          <img src={logo} alt="Shareflow pixel Logo" />
         </div>
 
-        <nav className="sidebar-menu">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Dashboard</a></li>
-
-            <p className="sidebar-section">Marketplace</p>
-            <li><a href="#">Comprar</a></li>
-            <li><a href="#">Mis Pixeles</a></li>
-
-            <p className="sidebar-section">Administrar</p>
-            <li><a href="#">Wallet</a></li>
-            <li><a href="#">Transacciones</a></li>
-            <li><a href="#">Referidos</a></li>
-
-            <p className="sidebar-section">Otros</p>
-            <li><a href="#">Configuración</a></li>
-            <li><a href="#">Ayuda</a></li>
-          </ul>
-        </nav>
+        <SidebarMenu />
 
         <div className="logout">
           <a href="#">Cerrar Sesión</a>
         </div>
       </aside>
 
-      <main className="main-content">
+      <article className="main-content">
         <header className="navbar">
-          <div className="navbar-right">
+          <section className="navbar-left">
+            <h2>Inicio</h2>
+          </section>
+          <section className="navbar-right">
             <button className="icon-btn">🛒</button>
             <button className="icon-btn">🔔</button>
             <div className="user-info">
@@ -47,13 +35,13 @@ export function PrivateLayout() {
                 <p className="user-role">Administrador</p>
               </div>
             </div>
-          </div>
+          </section>
         </header>
 
-        <div className="page-content">
+        <section className="page-content">
           <Outlet />
-        </div>
-      </main>
-    </div>
+        </section>
+      </article>
+    </section>
   )
 }
