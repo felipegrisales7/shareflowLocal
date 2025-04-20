@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '@/context/AuthContext'
-import logo from '@/assets/login-logo.png'
+import logo from '@/assets/images/login-logo.png'
 import '@/styles/LoginForm.css'
 
 export function LoginForm() {

@@ -1,9 +1,9 @@
 import '@/styles/Home.css'
 
 //Assets
-import step1 from '@/assets/step1.png'
-import step2 from '@/assets/step2.png'
-import step3 from '@/assets/step3.png'
+import step1 from '@/assets/images/step1.png'
+import step2 from '@/assets/images/step2.png'
+import step3 from '@/assets/images/step3.png'
 
 //Components
 import { StepCard } from '@/components/home/StepCard'

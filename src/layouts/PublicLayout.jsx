@@ -1,4 +1,4 @@
-import mockupImage from '@/assets/mockup1.png'
+import mockupImage from '@/assets/images/mockup1.png'
 import '@/styles/PublicLayout.css'
 
 export function PublicLayout({ children }) {

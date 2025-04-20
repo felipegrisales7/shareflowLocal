@@ -3,7 +3,7 @@ import '@/styles/PrivateLayout.css'
 import { useAuth } from '@/context/AuthContext'
 
 //Assests
-import logo from '@/assets/shareflow-pixel-logo.png'
+import logo from '@/assets/images/shareflow-pixel-logo.png'
 import { SidebarMenu } from '../components/privateLayout/SidebarMenu'
 
 export function PrivateLayout() {
