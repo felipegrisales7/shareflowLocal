@@ -70,7 +70,7 @@ export function MarketplaceCard({
           </li>
           <li className="date-info">
             <img src={clockIcon} alt="Calendar icon" />
-            Quedan {daysLeft} días <span>(Cierra el {endDate})</span>
+            <span>Quedan {daysLeft} días (Cierra el {endDate})</span>
           </li>
         </ul>
 
