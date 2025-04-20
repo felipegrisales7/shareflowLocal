@@ -1,0 +1,57 @@
+/* Form Elements */
+.input {
+    width: 100%;
+    padding: var(--space-8);
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    background-color: var(--background-surface);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: var(--blue-600);
+    box-shadow: 0 0 0 2px rgba(44, 96, 255, 0.2);
+  }
+  
+  .input:disabled {
+    background-color: var(--neutral-100);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+  
+  .label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+    display: block;
+  }
+  
+  /* Form group wrapper */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-bottom: var(--space-16);
+  }
+  
+  /* Select */
+  .select {
+    @extend .input;
+    appearance: none;
+    background-image: url('/icons/chevron-down.svg');
+    background-repeat: no-repeat;
+    background-position: right var(--space-8) center;
+    background-size: 16px;
+  }
+  
+  /* Textarea */
+  .textarea {
+    @extend .input;
+    resize: vertical;
+    min-height: 100px;
+  }
+  

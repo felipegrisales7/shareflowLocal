@@ -1,0 +1,91 @@
+/* Base button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-8) var(--space-16);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    border: none;
+  }
+  
+  /* Primary */
+  .btn-primary {
+    background-color: var(--blue-600);
+    color: var(--text-inverted);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--blue-700);
+  }
+  
+  .btn-primary:disabled {
+    background-color: var(--blue-light-100);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+  }
+  
+  /* Secondary */
+  .btn-secondary {
+    background-color: var(--blue-light-100);
+    color: var(--blue-600);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--blue-light-200);
+  }
+  
+  /* Ghost */
+  .btn-ghost {
+    background: transparent;
+    color: var(--blue-600);
+    border: 1px solid var(--blue-600);
+  }
+  
+  .btn-ghost:hover {
+    background-color: var(--blue-light-100);
+  }
+  
+  /* Danger */
+  .btn-danger {
+    background-color: var(--danger-500);
+    color: var(--text-inverted);
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Sizes */
+  .btn-xs {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--font-size-xs);
+  }
+  
+  .btn-sm {
+    padding: var(--space-6) var(--space-12);
+    font-size: var(--font-size-sm);
+  }
+  
+  .btn-md {
+    padding: var(--space-8) var(--space-16);
+    font-size: var(--font-size-md);
+  }
+  
+  .btn-lg {
+    padding: var(--space-10) var(--space-20);
+    font-size: var(--font-size-lg);
+  }
+  
+  /* Icon-only buttons */
+  .btn-icon {
+    padding: var(--space-6);
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+  }
+  

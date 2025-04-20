@@ -1,85 +1,47 @@
 .home-container {
-    padding: 24px;
-  }
-  
-  .home-title {
-    font-size: 24px;
-    margin-bottom: 6px;
-  }
-  
-  .home-subtitle {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .progress-bar {
-    position: relative;
-    height: 8px;
-    background: #e0f3e4;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .progress-fill {
-    height: 100%;
-    background: #84e187;
-    border-radius: 10px;
-    transition: width 0.3s ease;
-  }
-  
-  .progress-label {
-    position: absolute;
-    right: 10px;
-    top: -20px;
-    font-size: 12px;
-    color: #555;
-  }
-  
-  .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .step-card {
-    background: white;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    padding: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .step-card img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin-right: 16px;
-  }
-  
-  .step-content {
-    flex: 1;
-  }
-  
-  .step-content h3 {
-    font-size: 16px;
-    margin: 0 0 6px 0;
-  }
-  
-  .step-content p {
-    font-size: 14px;
-    color: #555;
-    margin: 0;
-  }
-  
-  .step-button {
-    background: #111;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-  }
-  
+  padding: var(--space-24);
+}
+
+.title-section{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.home-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-20);
+  line-height: var(--line-height-md);
+}
+
+.progress-bar {
+  position: relative;
+  width: 80%;
+  height: var(--space-12);
+  background-color: var(--green-100);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-32);
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--green-400);
+  border-radius: var(--radius-lg);
+  transition: width 0.3s ease;
+}
+
+.progress-label {
+  position: absolute;
+  right: var(--space-10);
+  top: -20px;
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
