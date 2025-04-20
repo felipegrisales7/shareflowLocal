@@ -5,6 +5,8 @@ import place1 from '@/assets/images/place1.png'
 import place2 from '@/assets/images/place2.png' 
 import place3 from '@/assets/images/place3.png'
 import place4 from '@/assets/images/place4.png'
+
+//Components
 import { MarketplaceCard } from '../components/marketplace/MarketplaceCard'
 import { Simulator } from '../components/marketplace/Simulator'
 

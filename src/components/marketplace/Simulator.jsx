@@ -1,13 +1,14 @@
 import mockup from '@/assets/images/phone_preview.png'
 import '@/styles/Marketplace.css'
 
-export function Simulator() {
+export function Simulator({ aside }) {
   return (
     <article className="simulator">
-      <figure className="simulator-image">
-        <img src={mockup} alt="Phone mockup" />
-      </figure>
-
+      { aside &&
+        <figure className="simulator-image">
+          <img src={mockup} alt="Phone mockup" />
+        </figure>
+      }
       <section className="simulator-form">
         <h2 className="simulator-title">SIMULA EL RENDIMIENTO DE TU PIXEL</h2>
 
