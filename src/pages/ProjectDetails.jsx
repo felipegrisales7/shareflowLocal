@@ -22,10 +22,8 @@ export function ProjectDetails() {
           <p className="project-price">$10.000.000</p>
         </div>
         <div className="availability-box">
-        <p className="availability-count">
-            <strong>23</strong> <span>/42</span>
-        </p>
-        <p className="availability-label">Pixeles Disponibles</p>
+          <span className='availability-count'><p>23</p> <p>/42</p></span>
+          <p className="availability-label">Pixeles Disponibles</p>
         </div>
       </header>
 
